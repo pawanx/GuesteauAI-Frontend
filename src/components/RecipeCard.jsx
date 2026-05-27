@@ -49,11 +49,15 @@ const RecipeCard = ({ recipe }) => {
             ))}
           </div>
         </div>
-
-        <div className="calorie-box">
-          <h4>Estimated Calories</h4>
-
-          <span>🔥 {recipe.calories}</span>
+        <div className="recipe-stats">
+          <div className="calorie-box">
+            <h4>Estimated Calories</h4>
+            <span>🔥 {recipe.calories}</span>
+        </div>
+        <div className="time-box">
+            <h4>Cooking Time</h4>
+           <span>⏱️ {recipe.time_taken || "Not specified"}</span>
+        </div>
         </div>
       </div>
     </div>
